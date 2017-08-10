@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F55531854D8A71D94191D9E /* Pods_KrediMatik_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033C15594B7B9F6A49C32D7A /* Pods_KrediMatik_v2.framework */; };
+		C99715FE7A665A6785903F26 /* Pods_KrediMatik_v2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E43D9FC47F2F5D0A05175 /* Pods_KrediMatik_v2UITests.framework */; };
+		E9CF5D701FF52783B13B72D4 /* Pods_KrediMatik_v2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C566649FA833C5B683367E9 /* Pods_KrediMatik_v2Tests.framework */; };
+		FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E641F2A07720070E296 /* AppDelegate.swift */; };
+		FA882E671F2A07720070E296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E661F2A07720070E296 /* ViewController.swift */; };
+		FA882E6A1F2A07720070E296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E681F2A07720070E296 /* Main.storyboard */; };
+		FA882E6C1F2A07720070E296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA882E6B1F2A07720070E296 /* Assets.xcassets */; };
+		FA882E6F1F2A07720070E296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */; };
+		FA882E7A1F2A07720070E296 /* KrediMatik_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E791F2A07720070E296 /* KrediMatik_v2Tests.swift */; };
+		FA882E851F2A07720070E296 /* KrediMatik_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */; };
+		FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */; };
+		FABC643D1F2A1D6F006D1046 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABC643C1F2A1D6F006D1046 /* iAd.framework */; };
+		FABC64571F2A25F3006D1046 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC643F1F2A25F3006D1046 /* btn_blue.png */; };
+		FABC64581F2A25F4006D1046 /* btn_buyuk_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64401F2A25F3006D1046 /* btn_buyuk_blue.png */; };
+		FABC64591F2A25F4006D1046 /* btn_buyuk_red.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64411F2A25F3006D1046 /* btn_buyuk_red.png */; };
+		FABC645A1F2A25F4006D1046 /* btn_ekle.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64421F2A25F3006D1046 /* btn_ekle.png */; };
+		FABC645B1F2A25F4006D1046 /* btn_karsilastir.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64431F2A25F3006D1046 /* btn_karsilastir.png */; };
+		FABC645C1F2A25F4006D1046 /* btn_red.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64441F2A25F3006D1046 /* btn_red.png */; };
+		FABC645D1F2A25F4006D1046 /* icon_check.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64451F2A25F3006D1046 /* icon_check.png */; };
+		FABC645E1F2A25F4006D1046 /* icon_dolar.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64461F2A25F3006D1046 /* icon_dolar.png */; };
+		FABC645F1F2A25F4006D1046 /* icon_ekle.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64471F2A25F3006D1046 /* icon_ekle.png */; };
+		FABC64601F2A25F4006D1046 /* icon_karsilastir.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64481F2A25F3006D1046 /* icon_karsilastir.png */; };
+		FABC64611F2A25F4006D1046 /* icon_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64491F2A25F3006D1046 /* icon_ok.png */; };
+		FABC64621F2A25F4006D1046 /* icon_rate.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644A1F2A25F3006D1046 /* icon_rate.png */; };
+		FABC64631F2A25F4006D1046 /* icon_v1_152.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644B1F2A25F3006D1046 /* icon_v1_152.png */; };
+		FABC64641F2A25F4006D1046 /* icon_v1_167.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644C1F2A25F3006D1046 /* icon_v1_167.png */; };
+		FABC64651F2A25F4006D1046 /* icon_v1_180.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644D1F2A25F3006D1046 /* icon_v1_180.png */; };
+		FABC64661F2A25F4006D1046 /* icon_v1_512.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644E1F2A25F3006D1046 /* icon_v1_512.png */; };
+		FABC64671F2A25F4006D1046 /* icon_v1_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC644F1F2A25F3006D1046 /* icon_v1_1024.png */; };
+		FABC64681F2A25F4006D1046 /* KrediMatik.ai in Resources */ = {isa = PBXBuildFile; fileRef = FABC64501F2A25F3006D1046 /* KrediMatik.ai */; };
+		FABC64691F2A25F4006D1046 /* KrediMatik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FABC64511F2A25F3006D1046 /* KrediMatik.jpg */; };
+		FABC646A1F2A25F4006D1046 /* KrediMatik.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64521F2A25F3006D1046 /* KrediMatik.png */; };
+		FABC646B1F2A25F4006D1046 /* logo_top.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64531F2A25F3006D1046 /* logo_top.png */; };
+		FABC646C1F2A25F4006D1046 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64541F2A25F3006D1046 /* menu_icon.png */; };
+		FABC646D1F2A25F4006D1046 /* text_box_kirmizicerceve.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64551F2A25F3006D1046 /* text_box_kirmizicerceve.png */; };
+		FABC646E1F2A25F4006D1046 /* text_box.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64561F2A25F3006D1046 /* text_box.png */; };
+		FACC752A1F2F79FD00F39FBE /* Digital Sans EF Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FACC75291F2F78ED00F39FBE /* Digital Sans EF Medium.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA882E761F2A07720070E296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA882E591F2A07720070E296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA882E601F2A07720070E296;
+			remoteInfo = KrediMatik_v2;
+		};
+		FA882E811F2A07720070E296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA882E591F2A07720070E296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA882E601F2A07720070E296;
+			remoteInfo = KrediMatik_v2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022E43D9FC47F2F5D0A05175 /* Pods_KrediMatik_v2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrediMatik_v2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		033C15594B7B9F6A49C32D7A /* Pods_KrediMatik_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrediMatik_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3B49CC32BCE02D0D912158 /* Pods-KrediMatik_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2/Pods-KrediMatik_v2.release.xcconfig"; sourceTree = "<group>"; };
+		2C566649FA833C5B683367E9 /* Pods_KrediMatik_v2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrediMatik_v2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C965D1E2045AC8E5F7B8C7 /* Pods-KrediMatik_v2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2Tests/Pods-KrediMatik_v2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4114914E3DB2A406C96FBF63 /* Pods-KrediMatik_v2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2UITests/Pods-KrediMatik_v2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B4372AA23B25BFCCDB9C59B /* Pods-KrediMatik_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2/Pods-KrediMatik_v2.debug.xcconfig"; sourceTree = "<group>"; };
+		68BFDCBE1BA29C5BFDC984F5 /* Pods-KrediMatik_v2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2UITests/Pods-KrediMatik_v2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C9B891485330DA3AB24CEB2 /* Pods-KrediMatik_v2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrediMatik_v2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrediMatik_v2Tests/Pods-KrediMatik_v2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FA882E611F2A07720070E296 /* KrediMatik_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrediMatik_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA882E641F2A07720070E296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA882E661F2A07720070E296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA882E691F2A07720070E296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA882E6B1F2A07720070E296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA882E6E1F2A07720070E296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA882E701F2A07720070E296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA882E751F2A07720070E296 /* KrediMatik_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrediMatik_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA882E791F2A07720070E296 /* KrediMatik_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediMatik_v2Tests.swift; sourceTree = "<group>"; };
+		FA882E7B1F2A07720070E296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA882E801F2A07720070E296 /* KrediMatik_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrediMatik_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediMatik_v2UITests.swift; sourceTree = "<group>"; };
+		FA882E861F2A07720070E296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FABC643C1F2A1D6F006D1046 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		FABC643F1F2A25F3006D1046 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_blue.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_blue.png"; sourceTree = "<group>"; };
+		FABC64401F2A25F3006D1046 /* btn_buyuk_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_buyuk_blue.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_buyuk_blue.png"; sourceTree = "<group>"; };
+		FABC64411F2A25F3006D1046 /* btn_buyuk_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_buyuk_red.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_buyuk_red.png"; sourceTree = "<group>"; };
+		FABC64421F2A25F3006D1046 /* btn_ekle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_ekle.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_ekle.png"; sourceTree = "<group>"; };
+		FABC64431F2A25F3006D1046 /* btn_karsilastir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_karsilastir.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_karsilastir.png"; sourceTree = "<group>"; };
+		FABC64441F2A25F3006D1046 /* btn_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_red.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_red.png"; sourceTree = "<group>"; };
+		FABC64451F2A25F3006D1046 /* icon_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_check.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_check.png"; sourceTree = "<group>"; };
+		FABC64461F2A25F3006D1046 /* icon_dolar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_dolar.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_dolar.png"; sourceTree = "<group>"; };
+		FABC64471F2A25F3006D1046 /* icon_ekle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_ekle.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_ekle.png"; sourceTree = "<group>"; };
+		FABC64481F2A25F3006D1046 /* icon_karsilastir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_karsilastir.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_karsilastir.png"; sourceTree = "<group>"; };
+		FABC64491F2A25F3006D1046 /* icon_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_ok.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_ok.png"; sourceTree = "<group>"; };
+		FABC644A1F2A25F3006D1046 /* icon_rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_rate.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_rate.png"; sourceTree = "<group>"; };
+		FABC644B1F2A25F3006D1046 /* icon_v1_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_v1_152.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_v1_152.png"; sourceTree = "<group>"; };
+		FABC644C1F2A25F3006D1046 /* icon_v1_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_v1_167.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_v1_167.png"; sourceTree = "<group>"; };
+		FABC644D1F2A25F3006D1046 /* icon_v1_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_v1_180.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_v1_180.png"; sourceTree = "<group>"; };
+		FABC644E1F2A25F3006D1046 /* icon_v1_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_v1_512.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_v1_512.png"; sourceTree = "<group>"; };
+		FABC644F1F2A25F3006D1046 /* icon_v1_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_v1_1024.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/icon_v1_1024.png"; sourceTree = "<group>"; };
+		FABC64501F2A25F3006D1046 /* KrediMatik.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = KrediMatik.ai; path = "../../../../../Volumes/e/app design/kredimatik ekran/KrediMatik.ai"; sourceTree = "<group>"; };
+		FABC64511F2A25F3006D1046 /* KrediMatik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = KrediMatik.jpg; path = "../../../../../Volumes/e/app design/kredimatik ekran/KrediMatik.jpg"; sourceTree = "<group>"; };
+		FABC64521F2A25F3006D1046 /* KrediMatik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KrediMatik.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/KrediMatik.png"; sourceTree = "<group>"; };
+		FABC64531F2A25F3006D1046 /* logo_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_top.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/logo_top.png"; sourceTree = "<group>"; };
+		FABC64541F2A25F3006D1046 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/menu_icon.png"; sourceTree = "<group>"; };
+		FABC64551F2A25F3006D1046 /* text_box_kirmizicerceve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text_box_kirmizicerceve.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/text_box_kirmizicerceve.png"; sourceTree = "<group>"; };
+		FABC64561F2A25F3006D1046 /* text_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text_box.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/text_box.png"; sourceTree = "<group>"; };
+		FACC75291F2F78ED00F39FBE /* Digital Sans EF Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Digital Sans EF Medium.ttf"; path = "../../../Downloads/Digital Sans EF Medium.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA882E5E1F2A07720070E296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABC643D1F2A1D6F006D1046 /* iAd.framework in Frameworks */,
+				5F55531854D8A71D94191D9E /* Pods_KrediMatik_v2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E721F2A07720070E296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CF5D701FF52783B13B72D4 /* Pods_KrediMatik_v2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E7D1F2A07720070E296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99715FE7A665A6785903F26 /* Pods_KrediMatik_v2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56481921D092A6E4A1D5C9FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABC643C1F2A1D6F006D1046 /* iAd.framework */,
+				033C15594B7B9F6A49C32D7A /* Pods_KrediMatik_v2.framework */,
+				2C566649FA833C5B683367E9 /* Pods_KrediMatik_v2Tests.framework */,
+				022E43D9FC47F2F5D0A05175 /* Pods_KrediMatik_v2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF0BE0188644DAA1C25C33B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B4372AA23B25BFCCDB9C59B /* Pods-KrediMatik_v2.debug.xcconfig */,
+				0A3B49CC32BCE02D0D912158 /* Pods-KrediMatik_v2.release.xcconfig */,
+				30C965D1E2045AC8E5F7B8C7 /* Pods-KrediMatik_v2Tests.debug.xcconfig */,
+				7C9B891485330DA3AB24CEB2 /* Pods-KrediMatik_v2Tests.release.xcconfig */,
+				4114914E3DB2A406C96FBF63 /* Pods-KrediMatik_v2UITests.debug.xcconfig */,
+				68BFDCBE1BA29C5BFDC984F5 /* Pods-KrediMatik_v2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA882E581F2A07720070E296 = {
+			isa = PBXGroup;
+			children = (
+				FA882E631F2A07720070E296 /* KrediMatik_v2 */,
+				FA882E781F2A07720070E296 /* KrediMatik_v2Tests */,
+				FA882E831F2A07720070E296 /* KrediMatik_v2UITests */,
+				FA882E621F2A07720070E296 /* Products */,
+				BAF0BE0188644DAA1C25C33B /* Pods */,
+				56481921D092A6E4A1D5C9FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA882E621F2A07720070E296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA882E611F2A07720070E296 /* KrediMatik_v2.app */,
+				FA882E751F2A07720070E296 /* KrediMatik_v2Tests.xctest */,
+				FA882E801F2A07720070E296 /* KrediMatik_v2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA882E631F2A07720070E296 /* KrediMatik_v2 */ = {
+			isa = PBXGroup;
+			children = (
+				FACC75281F2F78D300F39FBE /* font */,
+				FABC643E1F2A25CD006D1046 /* img */,
+				FA882E641F2A07720070E296 /* AppDelegate.swift */,
+				FA882E661F2A07720070E296 /* ViewController.swift */,
+				FA882E681F2A07720070E296 /* Main.storyboard */,
+				FA882E6B1F2A07720070E296 /* Assets.xcassets */,
+				FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */,
+				FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */,
+				FA882E701F2A07720070E296 /* Info.plist */,
+			);
+			path = KrediMatik_v2;
+			sourceTree = "<group>";
+		};
+		FA882E781F2A07720070E296 /* KrediMatik_v2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA882E791F2A07720070E296 /* KrediMatik_v2Tests.swift */,
+				FA882E7B1F2A07720070E296 /* Info.plist */,
+			);
+			path = KrediMatik_v2Tests;
+			sourceTree = "<group>";
+		};
+		FA882E831F2A07720070E296 /* KrediMatik_v2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */,
+				FA882E861F2A07720070E296 /* Info.plist */,
+			);
+			path = KrediMatik_v2UITests;
+			sourceTree = "<group>";
+		};
+		FABC643E1F2A25CD006D1046 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FABC643F1F2A25F3006D1046 /* btn_blue.png */,
+				FABC64401F2A25F3006D1046 /* btn_buyuk_blue.png */,
+				FABC64411F2A25F3006D1046 /* btn_buyuk_red.png */,
+				FABC64421F2A25F3006D1046 /* btn_ekle.png */,
+				FABC64431F2A25F3006D1046 /* btn_karsilastir.png */,
+				FABC64441F2A25F3006D1046 /* btn_red.png */,
+				FABC64451F2A25F3006D1046 /* icon_check.png */,
+				FABC64461F2A25F3006D1046 /* icon_dolar.png */,
+				FABC64471F2A25F3006D1046 /* icon_ekle.png */,
+				FABC64481F2A25F3006D1046 /* icon_karsilastir.png */,
+				FABC64491F2A25F3006D1046 /* icon_ok.png */,
+				FABC644A1F2A25F3006D1046 /* icon_rate.png */,
+				FABC644B1F2A25F3006D1046 /* icon_v1_152.png */,
+				FABC644C1F2A25F3006D1046 /* icon_v1_167.png */,
+				FABC644D1F2A25F3006D1046 /* icon_v1_180.png */,
+				FABC644E1F2A25F3006D1046 /* icon_v1_512.png */,
+				FABC644F1F2A25F3006D1046 /* icon_v1_1024.png */,
+				FABC64501F2A25F3006D1046 /* KrediMatik.ai */,
+				FABC64511F2A25F3006D1046 /* KrediMatik.jpg */,
+				FABC64521F2A25F3006D1046 /* KrediMatik.png */,
+				FABC64531F2A25F3006D1046 /* logo_top.png */,
+				FABC64541F2A25F3006D1046 /* menu_icon.png */,
+				FABC64551F2A25F3006D1046 /* text_box_kirmizicerceve.png */,
+				FABC64561F2A25F3006D1046 /* text_box.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		FACC75281F2F78D300F39FBE /* font */ = {
+			isa = PBXGroup;
+			children = (
+				FACC75291F2F78ED00F39FBE /* Digital Sans EF Medium.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA882E601F2A07720070E296 /* KrediMatik_v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA882E891F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2" */;
+			buildPhases = (
+				660EBE5CBA356C3E142F9216 /* [CP] Check Pods Manifest.lock */,
+				FA882E5D1F2A07720070E296 /* Sources */,
+				FA882E5E1F2A07720070E296 /* Frameworks */,
+				FA882E5F1F2A07720070E296 /* Resources */,
+				DFDFE4EFBC455A181E0C2161 /* [CP] Embed Pods Frameworks */,
+				0CAFEC2509E0F6450CEBE456 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KrediMatik_v2;
+			productName = KrediMatik_v2;
+			productReference = FA882E611F2A07720070E296 /* KrediMatik_v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA882E741F2A07720070E296 /* KrediMatik_v2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA882E8C1F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2Tests" */;
+			buildPhases = (
+				462505214EFEB5BA37E4F62E /* [CP] Check Pods Manifest.lock */,
+				FA882E711F2A07720070E296 /* Sources */,
+				FA882E721F2A07720070E296 /* Frameworks */,
+				FA882E731F2A07720070E296 /* Resources */,
+				23AAA52D272EE5A9174C28EF /* [CP] Embed Pods Frameworks */,
+				2596B14CF010B1CDAB21944A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA882E771F2A07720070E296 /* PBXTargetDependency */,
+			);
+			name = KrediMatik_v2Tests;
+			productName = KrediMatik_v2Tests;
+			productReference = FA882E751F2A07720070E296 /* KrediMatik_v2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA882E7F1F2A07720070E296 /* KrediMatik_v2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA882E8F1F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2UITests" */;
+			buildPhases = (
+				82A1EE4E7F4BCDD13C0DD2A0 /* [CP] Check Pods Manifest.lock */,
+				FA882E7C1F2A07720070E296 /* Sources */,
+				FA882E7D1F2A07720070E296 /* Frameworks */,
+				FA882E7E1F2A07720070E296 /* Resources */,
+				DB5B694DD65D5D5329663172 /* [CP] Embed Pods Frameworks */,
+				2A3752B489ECE596B9CFD4DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA882E821F2A07720070E296 /* PBXTargetDependency */,
+			);
+			name = KrediMatik_v2UITests;
+			productName = KrediMatik_v2UITests;
+			productReference = FA882E801F2A07720070E296 /* KrediMatik_v2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA882E591F2A07720070E296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FA882E601F2A07720070E296 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FA882E741F2A07720070E296 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA882E601F2A07720070E296;
+					};
+					FA882E7F1F2A07720070E296 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA882E601F2A07720070E296;
+					};
+				};
+			};
+			buildConfigurationList = FA882E5C1F2A07720070E296 /* Build configuration list for PBXProject "KrediMatik_v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA882E581F2A07720070E296;
+			productRefGroup = FA882E621F2A07720070E296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA882E601F2A07720070E296 /* KrediMatik_v2 */,
+				FA882E741F2A07720070E296 /* KrediMatik_v2Tests */,
+				FA882E7F1F2A07720070E296 /* KrediMatik_v2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA882E5F1F2A07720070E296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABC64641F2A25F4006D1046 /* icon_v1_167.png in Resources */,
+				FA882E6F1F2A07720070E296 /* LaunchScreen.storyboard in Resources */,
+				FABC64581F2A25F4006D1046 /* btn_buyuk_blue.png in Resources */,
+				FABC64591F2A25F4006D1046 /* btn_buyuk_red.png in Resources */,
+				FABC646E1F2A25F4006D1046 /* text_box.png in Resources */,
+				FABC645E1F2A25F4006D1046 /* icon_dolar.png in Resources */,
+				FABC64621F2A25F4006D1046 /* icon_rate.png in Resources */,
+				FABC64651F2A25F4006D1046 /* icon_v1_180.png in Resources */,
+				FABC645A1F2A25F4006D1046 /* btn_ekle.png in Resources */,
+				FABC645B1F2A25F4006D1046 /* btn_karsilastir.png in Resources */,
+				FABC64691F2A25F4006D1046 /* KrediMatik.jpg in Resources */,
+				FABC64601F2A25F4006D1046 /* icon_karsilastir.png in Resources */,
+				FABC646D1F2A25F4006D1046 /* text_box_kirmizicerceve.png in Resources */,
+				FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */,
+				FA882E6C1F2A07720070E296 /* Assets.xcassets in Resources */,
+				FABC646B1F2A25F4006D1046 /* logo_top.png in Resources */,
+				FABC64681F2A25F4006D1046 /* KrediMatik.ai in Resources */,
+				FABC646A1F2A25F4006D1046 /* KrediMatik.png in Resources */,
+				FABC645F1F2A25F4006D1046 /* icon_ekle.png in Resources */,
+				FABC64631F2A25F4006D1046 /* icon_v1_152.png in Resources */,
+				FABC64611F2A25F4006D1046 /* icon_ok.png in Resources */,
+				FA882E6A1F2A07720070E296 /* Main.storyboard in Resources */,
+				FABC64671F2A25F4006D1046 /* icon_v1_1024.png in Resources */,
+				FABC646C1F2A25F4006D1046 /* menu_icon.png in Resources */,
+				FABC64661F2A25F4006D1046 /* icon_v1_512.png in Resources */,
+				FABC645C1F2A25F4006D1046 /* btn_red.png in Resources */,
+				FABC645D1F2A25F4006D1046 /* icon_check.png in Resources */,
+				FABC64571F2A25F3006D1046 /* btn_blue.png in Resources */,
+				FACC752A1F2F79FD00F39FBE /* Digital Sans EF Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E731F2A07720070E296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E7E1F2A07720070E296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CAFEC2509E0F6450CEBE456 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2/Pods-KrediMatik_v2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23AAA52D272EE5A9174C28EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2Tests/Pods-KrediMatik_v2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2596B14CF010B1CDAB21944A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2Tests/Pods-KrediMatik_v2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A3752B489ECE596B9CFD4DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2UITests/Pods-KrediMatik_v2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		462505214EFEB5BA37E4F62E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		660EBE5CBA356C3E142F9216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82A1EE4E7F4BCDD13C0DD2A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5B694DD65D5D5329663172 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2UITests/Pods-KrediMatik_v2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFDFE4EFBC455A181E0C2161 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrediMatik_v2/Pods-KrediMatik_v2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA882E5D1F2A07720070E296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA882E671F2A07720070E296 /* ViewController.swift in Sources */,
+				FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E711F2A07720070E296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA882E7A1F2A07720070E296 /* KrediMatik_v2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA882E7C1F2A07720070E296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA882E851F2A07720070E296 /* KrediMatik_v2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA882E771F2A07720070E296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA882E601F2A07720070E296 /* KrediMatik_v2 */;
+			targetProxy = FA882E761F2A07720070E296 /* PBXContainerItemProxy */;
+		};
+		FA882E821F2A07720070E296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA882E601F2A07720070E296 /* KrediMatik_v2 */;
+			targetProxy = FA882E811F2A07720070E296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA882E681F2A07720070E296 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA882E691F2A07720070E296 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA882E6E1F2A07720070E296 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA882E871F2A07720070E296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA882E881F2A07720070E296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA882E8A1F2A07720070E296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4372AA23B25BFCCDB9C59B /* Pods-KrediMatik_v2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KrediMatik_v2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.kredimatik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA882E8B1F2A07720070E296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3B49CC32BCE02D0D912158 /* Pods-KrediMatik_v2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KrediMatik_v2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.kredimatik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FA882E8D1F2A07720070E296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C965D1E2045AC8E5F7B8C7 /* Pods-KrediMatik_v2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KrediMatik_v2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazimavci.KrediMatik-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrediMatik_v2.app/KrediMatik_v2";
+			};
+			name = Debug;
+		};
+		FA882E8E1F2A07720070E296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9B891485330DA3AB24CEB2 /* Pods-KrediMatik_v2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KrediMatik_v2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazimavci.KrediMatik-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrediMatik_v2.app/KrediMatik_v2";
+			};
+			name = Release;
+		};
+		FA882E901F2A07720070E296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4114914E3DB2A406C96FBF63 /* Pods-KrediMatik_v2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KrediMatik_v2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazimavci.KrediMatik-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KrediMatik_v2;
+			};
+			name = Debug;
+		};
+		FA882E911F2A07720070E296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BFDCBE1BA29C5BFDC984F5 /* Pods-KrediMatik_v2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KrediMatik_v2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nazimavci.KrediMatik-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KrediMatik_v2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA882E5C1F2A07720070E296 /* Build configuration list for PBXProject "KrediMatik_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA882E871F2A07720070E296 /* Debug */,
+				FA882E881F2A07720070E296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA882E891F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA882E8A1F2A07720070E296 /* Debug */,
+				FA882E8B1F2A07720070E296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA882E8C1F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA882E8D1F2A07720070E296 /* Debug */,
+				FA882E8E1F2A07720070E296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA882E8F1F2A07720070E296 /* Build configuration list for PBXNativeTarget "KrediMatik_v2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA882E901F2A07720070E296 /* Debug */,
+				FA882E911F2A07720070E296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA882E591F2A07720070E296 /* Project object */;
+}
