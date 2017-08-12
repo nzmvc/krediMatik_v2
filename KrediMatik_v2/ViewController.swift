@@ -12,6 +12,12 @@ import GoogleMobileAds
 
 class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewDataSource,UIPickerViewDelegate{
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {  // karşılaştır tıklandığında burada oluşturulan array diğer vc ye aktarılır
+        
+        let destVC : KarsilastirViewController = segue.destination as! KarsilastirViewController
+        destVC.compareArr = self.compareArr
+    
+    }
     
     //************************  Degişken Tanımları
     //*************************************************************
@@ -32,6 +38,9 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     var evOran : Double = 0.0
     var tasitOran : Double = 0.0
     var ihtiyacOran : Double = 0.0
+    var compareArr = [[String]]()
+    //var compareRow = [String]()
+    
     
     
     
@@ -90,13 +99,36 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         hesapla()
     }
 
+    @IBAction func karsilastirmaEkle(_ sender: Any) {
+        
+        //let cRow = [tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!]
+        //compareArr.append(cRow)
+        
+        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!])
+        
+    }
 
+    @IBAction func karsilastir(_ sender: Any) {
+        
+        
+        
+    }
  
     //*************************************************************
     //*************************************************************
     
+        // landscape force
+    override var shouldAutorotate : Bool {
+            return false
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // landscape force
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
         
         //bankaFaizOran.append(["garanti","1.1","1.2","1.3"])
         //bankaFaizOran.append(["ykb","2.1","2.2","2.3"])
@@ -105,9 +137,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         oranListe.delegate = self
         oranListe.isHidden=true
         
-        // landscape force
-        let value = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+
         
         
         ref = Database.database().reference()
@@ -252,10 +282,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         self.present(alert, animated: true, completion: nil)
         
     }
-    // landscape force
-    override var shouldAutorotate : Bool {
-        return false
-    }
+
+    
     ///////////// text field içinden cıkarkan keyboard un yok olması için //////
     ////////////////////////////////////////////////////////////////////////////
     
@@ -415,7 +443,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         }
         
     }
-    
+   
+
     
     // --------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------

@@ -13,7 +13,6 @@
 		FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E641F2A07720070E296 /* AppDelegate.swift */; };
 		FA882E671F2A07720070E296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E661F2A07720070E296 /* ViewController.swift */; };
 		FA882E6A1F2A07720070E296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E681F2A07720070E296 /* Main.storyboard */; };
-		FA882E6C1F2A07720070E296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA882E6B1F2A07720070E296 /* Assets.xcassets */; };
 		FA882E6F1F2A07720070E296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */; };
 		FA882E7A1F2A07720070E296 /* KrediMatik_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E791F2A07720070E296 /* KrediMatik_v2Tests.swift */; };
 		FA882E851F2A07720070E296 /* KrediMatik_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */; };
@@ -43,7 +42,10 @@
 		FABC646C1F2A25F4006D1046 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64541F2A25F3006D1046 /* menu_icon.png */; };
 		FABC646D1F2A25F4006D1046 /* text_box_kirmizicerceve.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64551F2A25F3006D1046 /* text_box_kirmizicerceve.png */; };
 		FABC646E1F2A25F4006D1046 /* text_box.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC64561F2A25F3006D1046 /* text_box.png */; };
+		FAC635931F3F661400CA3D48 /* KarsilastirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC635921F3F661400CA3D48 /* KarsilastirViewController.swift */; };
+		FAC635951F3F86E700CA3D48 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC635941F3F86E700CA3D48 /* TableViewCell.swift */; };
 		FACC752A1F2F79FD00F39FBE /* Digital Sans EF Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FACC75291F2F78ED00F39FBE /* Digital Sans EF Medium.ttf */; };
+		FAEDBBA51F3DB6DE007685FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEDBBA41F3DB6DE007685FA /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +79,6 @@
 		FA882E641F2A07720070E296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA882E661F2A07720070E296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA882E691F2A07720070E296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA882E6B1F2A07720070E296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA882E6E1F2A07720070E296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA882E701F2A07720070E296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA882E751F2A07720070E296 /* KrediMatik_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrediMatik_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +113,10 @@
 		FABC64541F2A25F3006D1046 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/menu_icon.png"; sourceTree = "<group>"; };
 		FABC64551F2A25F3006D1046 /* text_box_kirmizicerceve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text_box_kirmizicerceve.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/text_box_kirmizicerceve.png"; sourceTree = "<group>"; };
 		FABC64561F2A25F3006D1046 /* text_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = text_box.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/text_box.png"; sourceTree = "<group>"; };
+		FAC635921F3F661400CA3D48 /* KarsilastirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarsilastirViewController.swift; sourceTree = "<group>"; };
+		FAC635941F3F86E700CA3D48 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FACC75291F2F78ED00F39FBE /* Digital Sans EF Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Digital Sans EF Medium.ttf"; path = "../../../Downloads/Digital Sans EF Medium.ttf"; sourceTree = "<group>"; };
+		FAEDBBA41F3DB6DE007685FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,11 +201,13 @@
 				FABC643E1F2A25CD006D1046 /* img */,
 				FA882E641F2A07720070E296 /* AppDelegate.swift */,
 				FA882E661F2A07720070E296 /* ViewController.swift */,
+				FAC635921F3F661400CA3D48 /* KarsilastirViewController.swift */,
 				FA882E681F2A07720070E296 /* Main.storyboard */,
-				FA882E6B1F2A07720070E296 /* Assets.xcassets */,
+				FAC635941F3F86E700CA3D48 /* TableViewCell.swift */,
 				FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */,
 				FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */,
 				FA882E701F2A07720070E296 /* Info.plist */,
+				FAEDBBA41F3DB6DE007685FA /* Images.xcassets */,
 			);
 			path = KrediMatik_v2;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				TargetAttributes = {
 					FA882E601F2A07720070E296 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9789KVU745;
 						ProvisioningStyle = Automatic;
 					};
 					FA882E741F2A07720070E296 = {
@@ -393,13 +400,13 @@
 				FABC64601F2A25F4006D1046 /* icon_karsilastir.png in Resources */,
 				FABC646D1F2A25F4006D1046 /* text_box_kirmizicerceve.png in Resources */,
 				FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */,
-				FA882E6C1F2A07720070E296 /* Assets.xcassets in Resources */,
 				FABC646B1F2A25F4006D1046 /* logo_top.png in Resources */,
 				FABC64681F2A25F4006D1046 /* KrediMatik.ai in Resources */,
 				FABC646A1F2A25F4006D1046 /* KrediMatik.png in Resources */,
 				FABC645F1F2A25F4006D1046 /* icon_ekle.png in Resources */,
 				FABC64631F2A25F4006D1046 /* icon_v1_152.png in Resources */,
 				FABC64611F2A25F4006D1046 /* icon_ok.png in Resources */,
+				FAEDBBA51F3DB6DE007685FA /* Images.xcassets in Resources */,
 				FA882E6A1F2A07720070E296 /* Main.storyboard in Resources */,
 				FABC64671F2A25F4006D1046 /* icon_v1_1024.png in Resources */,
 				FABC646C1F2A25F4006D1046 /* menu_icon.png in Resources */,
@@ -570,6 +577,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC635931F3F661400CA3D48 /* KarsilastirViewController.swift in Sources */,
+				FAC635951F3F86E700CA3D48 /* TableViewCell.swift in Sources */,
 				FA882E671F2A07720070E296 /* ViewController.swift in Sources */,
 				FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */,
 			);
@@ -666,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -710,7 +719,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -724,6 +733,8 @@
 			baseConfigurationReference = 4B4372AA23B25BFCCDB9C59B /* Pods-KrediMatik_v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9789KVU745;
 				INFOPLIST_FILE = KrediMatik_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.kredimatik;
@@ -738,6 +749,8 @@
 			baseConfigurationReference = 0A3B49CC32BCE02D0D912158 /* Pods-KrediMatik_v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9789KVU745;
 				INFOPLIST_FILE = KrediMatik_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazimavci.kredimatik;
