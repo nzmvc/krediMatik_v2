@@ -11,8 +11,22 @@ import UIKit
 class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var compareArr = [[String]]()
+    var garanti = UIImage(named: "garanti_icon.png")
+    var ykb = UIImage(named: "ykb_icon.png")
+    var finans = UIImage(named: "finans_icon.jpeg")
+    var ziraat = UIImage(named: "ziraat_icon.jpeg")
+    var isbank = UIImage(named: "ykb_icon.png")
+    var krediMatikIcon = UIImage(named: "KrediMatik.png")
     
     @IBOutlet weak var label: UILabel!
+    
+    
+    // landscape force
+    override var shouldAutorotate : Bool {
+        return true
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,11 +49,6 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
     
     }
     
-    
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
-    @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
@@ -51,24 +60,34 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
         cell.faizFarki.text = compareArr[indexPath.row][4]
         cell.geriOdeme.text = compareArr[indexPath.row][5]
         
+        print("banka" + compareArr[indexPath.row][6])
+        
+        switch compareArr[indexPath.row][6] {
+        case "Garanti":
+            cell.bankIcon.image = garanti
+        case "YKB":
+            cell.bankIcon.image = ykb
+        case "Finans":
+            cell.bankIcon.image = finans
+        case "Akbank":
+            cell.bankIcon.image = ykb
+        case "ING":
+            cell.bankIcon.image = ykb
+        case "Isbank":
+            cell.bankIcon.image = ykb
+        case "Ziraat":
+            cell.bankIcon.image = ziraat
+        default:
+            cell.bankIcon.image = krediMatikIcon
+        }
+        
         return cell
         
         
     }
     
-    // landscape force
-    override var shouldAutorotate : Bool {
-        return false
-    }
+    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

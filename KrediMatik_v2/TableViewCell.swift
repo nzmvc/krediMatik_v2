@@ -16,6 +16,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var geriOdeme: UILabel!
     @IBOutlet weak var aylikOdeme: UILabel!
     @IBOutlet weak var faizFarki: UILabel!
+    @IBOutlet weak var bankIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

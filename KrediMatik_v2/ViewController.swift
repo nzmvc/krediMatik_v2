@@ -12,12 +12,7 @@ import GoogleMobileAds
 
 class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewDataSource,UIPickerViewDelegate{
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {  // karşılaştır tıklandığında burada oluşturulan array diğer vc ye aktarılır
-        
-        let destVC : KarsilastirViewController = segue.destination as! KarsilastirViewController
-        destVC.compareArr = self.compareArr
-    
-    }
+
     
     //************************  Degişken Tanımları
     //*************************************************************
@@ -39,6 +34,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     var tasitOran : Double = 0.0
     var ihtiyacOran : Double = 0.0
     var compareArr = [[String]]()
+    var selectedBank = ""
     //var compareRow = [String]()
     
     
@@ -60,6 +56,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     @IBOutlet weak var oran: UITextField!
     @IBOutlet weak var reklamView: UIView!
     @IBOutlet weak var oranListe: UIPickerView!
+    @IBOutlet weak var karsilastimaEkleButton: UIButton!
+    @IBOutlet weak var karsilastirButton: UIButton!
     
     //************************  IB Function Tanımları
     //*************************************************************
@@ -104,8 +102,9 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         //let cRow = [tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!]
         //compareArr.append(cRow)
         
-        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!])
+        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!, selectedBank])
         
+        karsilastirButton.isEnabled = true
     }
 
     @IBAction func karsilastir(_ sender: Any) {
@@ -116,7 +115,12 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
  
     //*************************************************************
     //*************************************************************
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {  // karşılaştır tıklandığında burada oluşturulan array diğer vc ye aktarılır
+        
+        let destVC : KarsilastirViewController = segue.destination as! KarsilastirViewController
+        destVC.compareArr = self.compareArr
     
+    }   
         // landscape force
     override var shouldAutorotate : Bool {
             return false
@@ -129,17 +133,10 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
-        
-        //bankaFaizOran.append(["garanti","1.1","1.2","1.3"])
-        //bankaFaizOran.append(["ykb","2.1","2.2","2.3"])
-        
         oranListe.dataSource = self
         oranListe.delegate = self
         oranListe.isHidden=true
-        
-
-        
-        
+   
         ref = Database.database().reference()
         formatter.numberStyle = NumberFormatter.Style.decimal
         formatter.locale = Locale(identifier: "en_TR")
@@ -180,7 +177,37 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
             print(error.localizedDescription)
         }
         
+        // Finans
+        ref.child("bankalar").child("finans").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.tasitOran = (value?["tasit"] as? Double)!
+            self.evOran = (value?["ev"] as? Double)!
+            self.ihtiyacOran = value?["ihtiyac"]  as! Double
+            
+            self.bankaFaizOran.append(["Finans",String(self.tasitOran),String(self.evOran),String(self.ihtiyacOran)])
+            
+            // ...
+        }) { (error) in
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(error.localizedDescription)
+        }
         
+        // Ziraat
+        ref.child("bankalar").child("ziraat").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.tasitOran = (value?["tasit"] as? Double)!
+            self.evOran = (value?["ev"] as? Double)!
+            self.ihtiyacOran = value?["ihtiyac"]  as! Double
+            
+            self.bankaFaizOran.append(["Ziraat",String(self.tasitOran),String(self.evOran),String(self.ihtiyacOran)])
+            
+            // ...
+        }) { (error) in
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(error.localizedDescription)
+        }
         
         //  farklı ekran boyları için kod içinden değişim
         //if view.frame.size.height == 568 {
@@ -212,7 +239,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         print (view.frame.size.width)
         if view.frame.size.width == 320 {
             bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-            reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
+            //reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
             //reklamView.frame.size.height = 50
         } else {  // 320
             bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
@@ -375,7 +402,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
                 xNSNumber  = numberString as NSNumber
                 faizFarki.text = "   " + String( validatingUTF8: formatter.string(from: xNSNumber)!)! + " TL"
                
-                
+                karsilastimaEkleButton.isEnabled = true
             }
         }
     }
@@ -431,6 +458,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         if bankaFaizOran.count > 0 {
             
             oran.text = bankaFaizOran[row][krediTipi]
+            selectedBank = bankaFaizOran[row][0]
             oranListe.isHidden=true
             //otomatikHesapla(1 as AnyObject)
             hesapla()

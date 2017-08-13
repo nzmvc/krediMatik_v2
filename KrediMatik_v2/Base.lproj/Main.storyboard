@@ -317,7 +317,7 @@
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-5L-eXp" userLabel="karsılastırView">
                                 <rect key="frame" x="0.0" y="408" width="320" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-Jr-ic5">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-Jr-ic5">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <state key="normal" title="              Karşılaştırma için ekle" backgroundImage="btn_ekle.png">
@@ -327,7 +327,7 @@
                                             <action selector="karsilastirmaEkle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AF-je-nD9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-71-4gz">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-71-4gz">
                                         <rect key="frame" x="0.0" y="50" width="320" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                         <state key="normal" title="              Karşılaştır" backgroundImage="btn_karsilastir.png">
@@ -346,31 +346,27 @@
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ekle.png" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-ed-LJF">
                                         <rect key="frame" x="36" y="9" width="32" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2G0-ed-LJF" secondAttribute="height" multiplier="1:1" id="QMT-dD-y77"/>
-                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="8M0-Jr-ic5" firstAttribute="top" secondItem="b6J-5L-eXp" secondAttribute="top" id="12b-uf-v3Y"/>
-                                    <constraint firstItem="3No-71-4gz" firstAttribute="top" secondItem="2G0-ed-LJF" secondAttribute="bottom" constant="9" id="GFP-G2-OcX"/>
+                                    <constraint firstItem="3No-71-4gz" firstAttribute="top" secondItem="2G0-ed-LJF" secondAttribute="bottom" constant="9" id="4Vo-cc-KHm"/>
+                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="leading" secondItem="sRP-Nf-4kl" secondAttribute="leading" id="86z-kV-YbK"/>
                                     <constraint firstItem="sRP-Nf-4kl" firstAttribute="top" secondItem="8M0-Jr-ic5" secondAttribute="bottom" constant="9" id="Hb2-bz-oqe"/>
                                     <constraint firstItem="sRP-Nf-4kl" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" constant="36" id="HzP-XJ-5Fh"/>
                                     <constraint firstAttribute="width" secondItem="b6J-5L-eXp" secondAttribute="height" multiplier="320:101" constant="3.1683168316831711" id="Lge-7m-vue"/>
-                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" constant="36" id="Mh0-cQ-U5r"/>
                                     <constraint firstItem="3No-71-4gz" firstAttribute="height" secondItem="8M0-Jr-ic5" secondAttribute="height" id="MsA-dQ-fgC"/>
-                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="top" secondItem="b6J-5L-eXp" secondAttribute="top" constant="7" id="Nkg-Wy-60p"/>
+                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="centerY" secondItem="8M0-Jr-ic5" secondAttribute="centerY" id="P8D-Nr-3Dv"/>
                                     <constraint firstItem="3No-71-4gz" firstAttribute="top" secondItem="8M0-Jr-ic5" secondAttribute="bottom" id="Zfn-HZ-1pZ"/>
                                     <constraint firstAttribute="bottom" secondItem="sRP-Nf-4kl" secondAttribute="bottom" constant="5" id="a7k-zE-68b"/>
                                     <constraint firstAttribute="bottom" secondItem="sRP-Nf-4kl" secondAttribute="bottom" constant="9" id="cSJ-q3-HFz"/>
-                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="top" secondItem="b6J-5L-eXp" secondAttribute="top" constant="9" id="mmW-Tq-hSo"/>
                                     <constraint firstItem="sRP-Nf-4kl" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" constant="36" id="p2a-dI-Vxw"/>
+                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="trailing" secondItem="sRP-Nf-4kl" secondAttribute="trailing" id="pST-sQ-ttg"/>
                                     <constraint firstItem="3No-71-4gz" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" id="rSX-es-9SH"/>
                                     <constraint firstItem="8M0-Jr-ic5" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" id="sxn-yy-Ljb"/>
                                     <constraint firstAttribute="bottom" secondItem="3No-71-4gz" secondAttribute="bottom" id="syQ-D5-XhC"/>
                                     <constraint firstAttribute="trailing" secondItem="3No-71-4gz" secondAttribute="trailing" id="tEY-OV-NJb"/>
-                                    <constraint firstItem="2G0-ed-LJF" firstAttribute="leading" secondItem="b6J-5L-eXp" secondAttribute="leading" constant="36" id="wDl-or-oWF"/>
                                     <constraint firstAttribute="trailing" secondItem="8M0-Jr-ic5" secondAttribute="trailing" id="yof-a9-HY0"/>
                                 </constraints>
                             </view>
@@ -426,6 +422,8 @@
                         <outlet property="faizFarki" destination="ljf-nU-gPn" id="sVu-8i-2kx"/>
                         <outlet property="geriOdeme" destination="U15-UJ-Dkd" id="4jl-YV-fF3"/>
                         <outlet property="ihtiyacBtn" destination="E15-il-2BG" id="pxo-3Y-OPT"/>
+                        <outlet property="karsilastimaEkleButton" destination="8M0-Jr-ic5" id="mLy-be-X3J"/>
+                        <outlet property="karsilastirButton" destination="3No-71-4gz" id="J1L-ck-HzW"/>
                         <outlet property="oran" destination="U1u-GY-6bn" id="lQJ-et-fVK"/>
                         <outlet property="oranListe" destination="QUx-y7-FXo" id="new-Fb-uGf"/>
                         <outlet property="reklamView" destination="xOE-y5-BRW" id="Djp-W6-ts1"/>
@@ -451,8 +449,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZq-2e-A3f">
-                                <rect key="frame" x="0.0" y="20" width="568" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karşılaştırma Tablosu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZq-2e-A3f">
+                                <rect key="frame" x="54" y="20" width="514" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -518,6 +516,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="aylikOdeme" destination="FEQ-NW-5La" id="Hj0-MY-K7s"/>
+                                            <outlet property="bankIcon" destination="51u-dm-BcO" id="bIl-V7-HY2"/>
                                             <outlet property="faizFarki" destination="z8t-6v-aiO" id="dUp-wV-SRm"/>
                                             <outlet property="geriOdeme" destination="1c7-kF-WXn" id="7mV-eO-w7r"/>
                                             <outlet property="oran" destination="LoO-fs-pdX" id="fRF-d2-U4O"/>
@@ -534,12 +533,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vZq-2e-A3f" firstAttribute="leading" secondItem="BxN-87-3op" secondAttribute="leading" id="26Z-bs-EZB"/>
+                            <constraint firstItem="vZq-2e-A3f" firstAttribute="leading" secondItem="BxN-87-3op" secondAttribute="leading" constant="54" id="26Z-bs-EZB"/>
                             <constraint firstItem="vZq-2e-A3f" firstAttribute="top" secondItem="x6o-72-ly1" secondAttribute="bottom" id="6RG-0h-Akw"/>
                             <constraint firstItem="UJH-2s-I9X" firstAttribute="top" secondItem="vZq-2e-A3f" secondAttribute="bottom" id="9MQ-h8-fsL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UJH-2s-I9X" secondAttribute="trailing" constant="-20" id="AW1-Yd-Zzh"/>
                             <constraint firstAttribute="trailing" secondItem="vZq-2e-A3f" secondAttribute="trailing" id="Z1u-xW-cG2"/>
-                            <constraint firstItem="UJH-2s-I9X" firstAttribute="leading" secondItem="vZq-2e-A3f" secondAttribute="leading" id="s2v-7K-Tfn"/>
+                            <constraint firstItem="UJH-2s-I9X" firstAttribute="leading" secondItem="vZq-2e-A3f" secondAttribute="leading" constant="-54" id="s2v-7K-Tfn"/>
                             <constraint firstItem="UJH-2s-I9X" firstAttribute="bottom" secondItem="56i-8G-HeR" secondAttribute="top" id="wWk-ul-d4S"/>
                         </constraints>
                     </view>
@@ -552,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olg-zJ-7aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.5" y="-12.67605633802817"/>
+            <point key="canvasLocation" x="152" y="618"/>
         </scene>
     </scenes>
     <resources>

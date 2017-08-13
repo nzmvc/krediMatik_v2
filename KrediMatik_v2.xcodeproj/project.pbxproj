@@ -16,6 +16,10 @@
 		FA882E6F1F2A07720070E296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E6D1F2A07720070E296 /* LaunchScreen.storyboard */; };
 		FA882E7A1F2A07720070E296 /* KrediMatik_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E791F2A07720070E296 /* KrediMatik_v2Tests.swift */; };
 		FA882E851F2A07720070E296 /* KrediMatik_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */; };
+		FA9F9CC01F40C9A2005BAADE /* ziraat_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBC1F40C9A2005BAADE /* ziraat_icon.jpeg */; };
+		FA9F9CC11F40C9A2005BAADE /* finans_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBD1F40C9A2005BAADE /* finans_icon.jpeg */; };
+		FA9F9CC21F40C9A2005BAADE /* ykb_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBE1F40C9A2005BAADE /* ykb_icon.png */; };
+		FA9F9CC31F40C9A2005BAADE /* garanti_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBF1F40C9A2005BAADE /* garanti_icon.png */; };
 		FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */; };
 		FABC643D1F2A1D6F006D1046 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABC643C1F2A1D6F006D1046 /* iAd.framework */; };
 		FABC64571F2A25F3006D1046 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC643F1F2A25F3006D1046 /* btn_blue.png */; };
@@ -87,6 +91,10 @@
 		FA882E801F2A07720070E296 /* KrediMatik_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrediMatik_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA882E841F2A07720070E296 /* KrediMatik_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediMatik_v2UITests.swift; sourceTree = "<group>"; };
 		FA882E861F2A07720070E296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9F9CBC1F40C9A2005BAADE /* ziraat_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ziraat_icon.jpeg; sourceTree = "<group>"; };
+		FA9F9CBD1F40C9A2005BAADE /* finans_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = finans_icon.jpeg; sourceTree = "<group>"; };
+		FA9F9CBE1F40C9A2005BAADE /* ykb_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ykb_icon.png; sourceTree = "<group>"; };
+		FA9F9CBF1F40C9A2005BAADE /* garanti_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garanti_icon.png; sourceTree = "<group>"; };
 		FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FABC643C1F2A1D6F006D1046 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FABC643F1F2A25F3006D1046 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_blue.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_blue.png"; sourceTree = "<group>"; };
@@ -233,6 +241,10 @@
 		FABC643E1F2A25CD006D1046 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F9CBC1F40C9A2005BAADE /* ziraat_icon.jpeg */,
+				FA9F9CBD1F40C9A2005BAADE /* finans_icon.jpeg */,
+				FA9F9CBE1F40C9A2005BAADE /* ykb_icon.png */,
+				FA9F9CBF1F40C9A2005BAADE /* garanti_icon.png */,
 				FABC643F1F2A25F3006D1046 /* btn_blue.png */,
 				FABC64401F2A25F3006D1046 /* btn_buyuk_blue.png */,
 				FABC64411F2A25F3006D1046 /* btn_buyuk_red.png */,
@@ -388,6 +400,7 @@
 			files = (
 				FABC64641F2A25F4006D1046 /* icon_v1_167.png in Resources */,
 				FA882E6F1F2A07720070E296 /* LaunchScreen.storyboard in Resources */,
+				FA9F9CC11F40C9A2005BAADE /* finans_icon.jpeg in Resources */,
 				FABC64581F2A25F4006D1046 /* btn_buyuk_blue.png in Resources */,
 				FABC64591F2A25F4006D1046 /* btn_buyuk_red.png in Resources */,
 				FABC646E1F2A25F4006D1046 /* text_box.png in Resources */,
@@ -397,9 +410,12 @@
 				FABC645A1F2A25F4006D1046 /* btn_ekle.png in Resources */,
 				FABC645B1F2A25F4006D1046 /* btn_karsilastir.png in Resources */,
 				FABC64691F2A25F4006D1046 /* KrediMatik.jpg in Resources */,
+				FA9F9CC01F40C9A2005BAADE /* ziraat_icon.jpeg in Resources */,
+				FA9F9CC21F40C9A2005BAADE /* ykb_icon.png in Resources */,
 				FABC64601F2A25F4006D1046 /* icon_karsilastir.png in Resources */,
 				FABC646D1F2A25F4006D1046 /* text_box_kirmizicerceve.png in Resources */,
 				FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */,
+				FA9F9CC31F40C9A2005BAADE /* garanti_icon.png in Resources */,
 				FABC646B1F2A25F4006D1046 /* logo_top.png in Resources */,
 				FABC64681F2A25F4006D1046 /* KrediMatik.ai in Resources */,
 				FABC646A1F2A25F4006D1046 /* KrediMatik.png in Resources */,
