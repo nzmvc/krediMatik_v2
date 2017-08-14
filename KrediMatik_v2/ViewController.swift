@@ -142,7 +142,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         formatter.locale = Locale(identifier: "en_TR")
      
         //  ??????????????????????
-        // TODO banka listesini alarak tüm veriyi çekebilir hale getir.
+        //TODO: banka listesini isim bağımsız alarak tüm veriyi çekebilir hale getir.
         // GARANTİ
     
 
@@ -234,16 +234,16 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         interstitial.load(request)
         
         // reklam banner
-        
-        print ("FFFFFFFFFFFFFFFFFFFF")
+        //TODO: iphone 5 sonrasında kullanılacak banner değişiyor. heighy 50 den 60 cıkıyor. reklamView ın buna göre ayarlanması gerekiyor.
         print (view.frame.size.width)
         if view.frame.size.width == 320 {
             bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-            //reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
+            reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
             //reklamView.frame.size.height = 50
-        } else {  // 320
+        } else {
             bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
-            
+            reklamView.frame = CGRect(x: 0, y: view.frame.size.height-60, width: view.frame.size.width, height: 60)
+            //reklamView.frame.size.height = 60
             
         }
         

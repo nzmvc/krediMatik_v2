@@ -251,22 +251,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geri ödeme   " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wo-wI-OHd">
-                                        <rect key="frame" x="0.0" y="72" width="160" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Geri ödeme   ">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="20"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   12.123 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljf-nU-gPn">
                                         <rect key="frame" x="160" y="36" width="160" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -285,25 +269,31 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geri Ödeme" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-hg-1eX">
+                                        <rect key="frame" x="0.0" y="72" width="160" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="qo3-zo-aiX" secondAttribute="trailing" id="2Cs-aR-3eR"/>
-                                    <constraint firstItem="8wo-wI-OHd" firstAttribute="leading" secondItem="t72-m7-ci1" secondAttribute="leading" id="32p-ZJ-Cnt"/>
                                     <constraint firstItem="t72-m7-ci1" firstAttribute="width" secondItem="itt-iH-HSs" secondAttribute="width" id="6EO-co-UIX"/>
                                     <constraint firstItem="ljf-nU-gPn" firstAttribute="height" secondItem="qo3-zo-aiX" secondAttribute="height" id="9bJ-eC-bdY"/>
                                     <constraint firstItem="U15-UJ-Dkd" firstAttribute="top" secondItem="ljf-nU-gPn" secondAttribute="bottom" id="ADE-Pb-rSz"/>
                                     <constraint firstItem="ljf-nU-gPn" firstAttribute="leading" secondItem="t72-m7-ci1" secondAttribute="trailing" id="AbJ-n1-LPb"/>
                                     <constraint firstItem="qo3-zo-aiX" firstAttribute="top" secondItem="OBj-J2-1LC" secondAttribute="top" id="B3D-4C-hDk"/>
+                                    <constraint firstItem="KcA-hg-1eX" firstAttribute="top" secondItem="t72-m7-ci1" secondAttribute="bottom" id="BJB-Fi-d7s"/>
                                     <constraint firstItem="itt-iH-HSs" firstAttribute="top" secondItem="OBj-J2-1LC" secondAttribute="top" id="BeG-SG-62y"/>
                                     <constraint firstAttribute="width" secondItem="OBj-J2-1LC" secondAttribute="height" multiplier="320:108" id="DRL-Xg-o5C"/>
-                                    <constraint firstItem="8wo-wI-OHd" firstAttribute="width" secondItem="t72-m7-ci1" secondAttribute="width" id="HRo-oN-ZqW"/>
                                     <constraint firstItem="itt-iH-HSs" firstAttribute="leading" secondItem="OBj-J2-1LC" secondAttribute="leading" id="Mf7-3Q-7ck"/>
                                     <constraint firstItem="qo3-zo-aiX" firstAttribute="leading" secondItem="itt-iH-HSs" secondAttribute="trailing" id="R7u-hn-0Le"/>
-                                    <constraint firstItem="8wo-wI-OHd" firstAttribute="top" secondItem="t72-m7-ci1" secondAttribute="bottom" id="anh-24-WUm"/>
-                                    <constraint firstItem="8wo-wI-OHd" firstAttribute="height" secondItem="t72-m7-ci1" secondAttribute="height" id="cA4-15-TJy"/>
+                                    <constraint firstItem="KcA-hg-1eX" firstAttribute="width" secondItem="t72-m7-ci1" secondAttribute="width" id="S1a-9T-Z6M"/>
                                     <constraint firstItem="itt-iH-HSs" firstAttribute="width" secondItem="OBj-J2-1LC" secondAttribute="width" multiplier="1/2" id="dr3-QV-H9X"/>
                                     <constraint firstItem="ljf-nU-gPn" firstAttribute="top" secondItem="qo3-zo-aiX" secondAttribute="bottom" id="f4L-xR-BX7"/>
                                     <constraint firstAttribute="trailing" secondItem="ljf-nU-gPn" secondAttribute="trailing" id="hBh-pk-g41"/>
+                                    <constraint firstItem="KcA-hg-1eX" firstAttribute="leading" secondItem="OBj-J2-1LC" secondAttribute="leading" id="iM2-fp-fVp"/>
+                                    <constraint firstItem="KcA-hg-1eX" firstAttribute="height" secondItem="t72-m7-ci1" secondAttribute="height" id="jSB-Pf-T5g"/>
                                     <constraint firstItem="U15-UJ-Dkd" firstAttribute="width" secondItem="ljf-nU-gPn" secondAttribute="width" id="nwB-u6-1JY"/>
                                     <constraint firstItem="t72-m7-ci1" firstAttribute="height" secondItem="itt-iH-HSs" secondAttribute="height" id="pX8-og-UbI"/>
                                     <constraint firstItem="qo3-zo-aiX" firstAttribute="height" secondItem="itt-iH-HSs" secondAttribute="height" id="sL7-sL-xX9"/>
