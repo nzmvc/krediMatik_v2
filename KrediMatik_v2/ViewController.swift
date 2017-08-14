@@ -102,7 +102,7 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         //let cRow = [tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!]
         //compareArr.append(cRow)
         //krediT      = Int(aylikOdeme.text!.replacingOccurrences(of: " ", with: ""))! //
-        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),faizFarki.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),geriOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""), selectedBank])
+        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),faizFarki.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),geriOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""), selectedBank,String(krediTipi),String(bireyselTicari)])
         
         karsilastirButton.isEnabled = true
     }

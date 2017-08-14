@@ -86,6 +86,26 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
             cell.bankIcon.image = krediMatikIcon
         }
         
+        
+        switch compareArr[indexPath.row][7] {
+        case "1":
+            cell.krediTipi.text = "Taşıt"
+        case "2":
+            cell.krediTipi.text = "Ev"
+        case "3":
+            cell.krediTipi.text = "İhtiyaç"
+        default:
+            cell.krediTipi.text = "Taşıt"
+        }
+        
+        switch compareArr[indexPath.row][8] {
+        case "2":
+            cell.bireyselTicari.text = "Ticari"
+        default:
+            cell.bireyselTicari.text = "Bireysel"
+        }
+        
+        
         return cell
         
         
