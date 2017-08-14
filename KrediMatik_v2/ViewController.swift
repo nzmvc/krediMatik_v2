@@ -101,8 +101,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         
         //let cRow = [tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!]
         //compareArr.append(cRow)
-        
-        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!,faizFarki.text!,geriOdeme.text!, selectedBank])
+        //krediT      = Int(aylikOdeme.text!.replacingOccurrences(of: " ", with: ""))! //
+        compareArr.append([tutar.text!,vade.text!,oran.text!,aylikOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),faizFarki.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""),geriOdeme.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "TL", with: ""), selectedBank])
         
         karsilastirButton.isEnabled = true
     }
@@ -320,13 +320,10 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     
     
     func textFieldShouldReturn (_ textField: UITextField!) -> Bool{
-        /*
-        KrediTutari.resignFirstResponder()
+        
+        tutar.resignFirstResponder()
         vade.resignFirstResponder()
         oran.resignFirstResponder()
-        oranListe.resignFirstResponder()
-        pickerAy.resignFirstResponder()
-        */
         return true
     }
     
@@ -479,7 +476,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     // oran alanına dokunduğunda picker yavaşça belirir
     // --------------------------------------------------------------------------------
     @IBAction func oranTouched(_ sender: AnyObject) {
-        oran.text=""
+        oran.text = ""
+        selectedBank = ""
         self.oranListe.alpha = 0
         self.oranListe.reloadAllComponents()
         

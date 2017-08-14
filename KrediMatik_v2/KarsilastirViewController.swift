@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MFMailComposeViewControllerDelegate {
 
     var compareArr = [[String]]()
     var garanti = UIImage(named: "garanti_icon.png")
@@ -18,6 +19,7 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
     var isbank = UIImage(named: "ykb_icon.png")
     var krediMatikIcon = UIImage(named: "KrediMatik.png")
     
+    @IBOutlet weak var compareTable: UITableView!
     @IBOutlet weak var label: UILabel!
     
     
@@ -25,6 +27,9 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
     override var shouldAutorotate : Bool {
         return true
     }
+    
+    
+
     
     
     override func viewDidLoad() {
@@ -86,6 +91,82 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
+    private func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.delete {    // tabloda yapılan edit işlemini kontrol eder
+            
+            compareArr.remove(at: indexPath.row)
+            compareTable.reloadData()     //   silme işi sonrasında tabloyu yeniden yuklemeliyiz
+        }
+    }
+    
+    //**************************  MAIL AYARLARI
+    //**********************************************
+    
+    @IBAction func sendMail(_ sender: AnyObject) {
+        
+        if MFMailComposeViewController.canSendMail() {
+            
+            let messageTitle = "Kredi Karşılaştırma tablosu"
+            var messageBody = "<html> <head> <meta charset=\"utf-8\"><title>Untitled Document</title></head><body><h1><strong>Karşılaştırma tablosu</strong></h1>"
+            
+            messageBody = messageBody + "<table border=\"1\"> <tr><th>Kredi turarı</th> <th>Vade</th> <th>Oran</th> <th>Aylık Odeme</th> <th>Toplam Odeme</th> <th>Faiz Farkı</th> </tr>"
+            
+            
+            // karşılastırma dizisine eklenen veriler html formatında yazılıyor
+            
+            
+            for row in compareArr{
+                
+                messageBody = messageBody + "<tr><td>" + row[0] + "</td>"
+                messageBody = messageBody + "<td>" + row[1] + "</td>"
+                messageBody = messageBody + "<td>" + row[2] + "</td>"
+                messageBody = messageBody + "<td>" + row[3] + "</td>"
+                messageBody = messageBody + "<td>" + row[4] + "</td>"
+                messageBody = messageBody + "<td>" + row[5] + "</td></tr>"
+                
+            }
+            messageBody = messageBody + "</table></body></html>"
+            
+            
+            
+            let toRecepient = ["nzm.avci@gmail.com"]
+            
+            let mc:MFMailComposeViewController = MFMailComposeViewController()
+            
+            mc.mailComposeDelegate = self
+            mc.setSubject(messageTitle)
+            mc.setMessageBody(messageBody, isHTML: true)
+            mc.setToRecipients(toRecepient)
+            
+            self.present(mc, animated: true, completion: nil)
+            
+        } else {
+            
+            print("You have no email account !!!")
+            
+        }
+        
+    }
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+        
+        switch result.rawValue {
+        case MFMailComposeResult.cancelled.rawValue :
+            print ("Mail Cancelled")
+        case MFMailComposeResult.saved.rawValue:
+            print("mail saved")
+        case MFMailComposeResult.sent.rawValue:
+            print("mail sent")
+        case MFMailComposeResult.failed.rawValue:
+            print ("mail failed")
+        default:
+            break
+            
+            
+        }
+        
+    }
     
 
 

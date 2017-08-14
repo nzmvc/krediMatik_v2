@@ -20,6 +20,7 @@
 		FA9F9CC11F40C9A2005BAADE /* finans_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBD1F40C9A2005BAADE /* finans_icon.jpeg */; };
 		FA9F9CC21F40C9A2005BAADE /* ykb_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBE1F40C9A2005BAADE /* ykb_icon.png */; };
 		FA9F9CC31F40C9A2005BAADE /* garanti_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F9CBF1F40C9A2005BAADE /* garanti_icon.png */; };
+		FA9F9CC51F418CCF005BAADE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9F9CC41F418CCF005BAADE /* MessageUI.framework */; };
 		FABC64391F2A13C0006D1046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */; };
 		FABC643D1F2A1D6F006D1046 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABC643C1F2A1D6F006D1046 /* iAd.framework */; };
 		FABC64571F2A25F3006D1046 /* btn_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FABC643F1F2A25F3006D1046 /* btn_blue.png */; };
@@ -95,6 +96,7 @@
 		FA9F9CBD1F40C9A2005BAADE /* finans_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = finans_icon.jpeg; sourceTree = "<group>"; };
 		FA9F9CBE1F40C9A2005BAADE /* ykb_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ykb_icon.png; sourceTree = "<group>"; };
 		FA9F9CBF1F40C9A2005BAADE /* garanti_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garanti_icon.png; sourceTree = "<group>"; };
+		FA9F9CC41F418CCF005BAADE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FABC643C1F2A1D6F006D1046 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		FABC643F1F2A25F3006D1046 /* btn_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_blue.png; path = "../../../../../Volumes/e/app design/kredimatik ekran/btn_blue.png"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9F9CC51F418CCF005BAADE /* MessageUI.framework in Frameworks */,
 				FABC643D1F2A1D6F006D1046 /* iAd.framework in Frameworks */,
 				5F55531854D8A71D94191D9E /* Pods_KrediMatik_v2.framework in Frameworks */,
 			);
@@ -159,6 +162,7 @@
 		56481921D092A6E4A1D5C9FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F9CC41F418CCF005BAADE /* MessageUI.framework */,
 				FABC643C1F2A1D6F006D1046 /* iAd.framework */,
 				033C15594B7B9F6A49C32D7A /* Pods_KrediMatik_v2.framework */,
 				2C566649FA833C5B683367E9 /* Pods_KrediMatik_v2Tests.framework */,
