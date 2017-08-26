@@ -38,6 +38,18 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
     //var compareRow = [String]()
     
     
+    @IBAction func swipe(_ sender: Any) {
+        // swipe gesture
+        print("show login screen")
+        
+        let loginStoryBoard = UIStoryboard(name:"Main", bundle: nil)
+        let loginVC = loginStoryBoard.instantiateViewController(withIdentifier: "LoginVC")
+        self.present(loginVC, animated: true, completion: nil)
+    }
+    @IBAction func Login(_ sender: Any) {
+        
+        print("show login screen")
+    }
     
     
     //************************  Outlet Tanımları
@@ -236,16 +248,44 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
         // reklam banner
         //TODO: iphone 5 sonrasında kullanılacak banner değişiyor. heighy 50 den 60 cıkıyor. reklamView ın buna göre ayarlanması gerekiyor.
         print (view.frame.size.width)
-        if view.frame.size.width == 320 {
-            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-            reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
-            //reklamView.frame.size.height = 50
-        } else {
-            bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
-            reklamView.frame = CGRect(x: 0, y: view.frame.size.height-60, width: view.frame.size.width, height: 60)
-            //reklamView.frame.size.height = 60
+        
+        if UIDevice.current.orientation.isLandscape {
             
+            print("****************            landscape")
+            print("height   " + String(describing: view.frame.size.height) )
+            print("width   " + String(describing: view.frame.size.width) )
+            if view.frame.size.height == 320 {
+                bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+                reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
+                //reklamView.frame.size.height = 50
+            } else {
+                bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
+                reklamView.frame = CGRect(x: 0, y: view.frame.size.height-60, width: view.frame.size.width, height: 60)
+                //reklamView.frame.size.height = 60
+                
+            }
+        
+        } else {
+            
+            print("****************            portrait")
+            print("height   " + String(describing: view.frame.size.height) )
+            print("width   " + String(describing: view.frame.size.width) )
+            
+            
+            if view.frame.size.width == 320 {
+                bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+                reklamView.frame = CGRect(x: 0, y: 518, width: 320, height: 50)
+                //reklamView.frame.size.height = 50
+            } else {
+                bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
+                reklamView.frame = CGRect(x: 0, y: view.frame.size.height-60, width: view.frame.size.width, height: 60)
+                //reklamView.frame.size.height = 60
+                
+            }
+        
         }
+        
+        
         
         
         //self.view.addSubview(bannerView)
@@ -378,7 +418,8 @@ class ViewController: UIViewController , GADBannerViewDelegate ,UIPickerViewData
                         pmt = ExcelFormulas.pmt( Double(oran.text!)! * 0.0105, nper: Double(vade.text!)!, pv: Double(krediT))
                     }
                 } else { // mortgage için hesaplama
-                    pmt = ExcelFormulas.pmt( Double(oran.text!)! * 0.001, nper: Double(vade.text!)!, pv: Double(krediT))
+                    pmt = ExcelFormulas.pmt( Double(oran.text!)! * 0.01, nper: Double(vade.text!)!, pv: Double(krediT))
+                    //pmt = ExcelFormulas.pmt( Double(oran.text!)!, nper: Double(vade.text!)!, pv: Double(krediT))
                 }
                 
                 

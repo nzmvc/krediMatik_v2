@@ -130,7 +130,7 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
             let messageTitle = "Kredi Karşılaştırma tablosu"
             var messageBody = "<html> <head> <meta charset=\"utf-8\"><title>Untitled Document</title></head><body><h1><strong>Karşılaştırma tablosu</strong></h1>"
             
-            messageBody = messageBody + "<table border=\"1\"> <tr><th>Kredi turarı</th> <th>Vade</th> <th>Oran</th> <th>Aylık Odeme</th> <th>Toplam Odeme</th> <th>Faiz Farkı</th> </tr>"
+            messageBody = messageBody + "<table border=\"1\"> <tr><th>Kredi turarı</th> <th>Vade</th> <th>Oran</th> <th>Aylık Odeme</th> <th>Toplam Odeme</th> <th>Faiz Farkı</th> <th>Banka</th> <th>Kredi Tipi</th> <th>Bireysel/Ticari</th> </tr>"
             
             
             // karşılastırma dizisine eklenen veriler html formatında yazılıyor
@@ -143,7 +143,10 @@ class KarsilastirViewController: UIViewController,UITableViewDelegate,UITableVie
                 messageBody = messageBody + "<td>" + row[2] + "</td>"
                 messageBody = messageBody + "<td>" + row[3] + "</td>"
                 messageBody = messageBody + "<td>" + row[4] + "</td>"
-                messageBody = messageBody + "<td>" + row[5] + "</td></tr>"
+                messageBody = messageBody + "<td>" + row[5] + "</td>"
+                messageBody = messageBody + "<td>" + row[6] + "</td>"
+                messageBody = messageBody + "<td>" + row[7] + "</td>"
+                messageBody = messageBody + "<td>" + row[8] + "</td></tr>"
                 
             }
             messageBody = messageBody + "</table></body></html>"
