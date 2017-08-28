@@ -1,4 +1,4 @@
-//
+    //
 //  UpdateRateViewController.swift
 //  KrediMatik_v2
 //
@@ -45,14 +45,17 @@ class UpdateRateViewController: UIViewController,UITableViewDelegate,UITableView
                     
                     //burada hata alıyor
                     //print(bankaDeger?["ev"]! as! String)
-                    let evO = bankaDeger!["ev"] as! Double
-                    let ihtiyacO = bankaDeger!["ihtiyac"] as! Double
-                    let tasitO = bankaDeger!["tasit"] as! Double
-                    print("ev oran v1:")
-                    print(String(describing: evO))
-                    self.dataArr.append([bankaAdi as! String,String(evO),String(tasitO),String(ihtiyacO)])
+                   
+                        let evO =  bankaDeger!["ev"] as! Double
+                        let tasitO = bankaDeger!["tasit"] as! Double
+                        let ihtiyacO = bankaDeger!["ihtiyac"] as! Double
+
+                        print("ev oran v1:")
+                        print(String(describing: evO))
+                        self.dataArr.append([bankaAdi as! String,String(evO),String(tasitO),String(ihtiyacO)])
                     
-                    self.bankaTablo.insertRows(at: [IndexPath(row: self.dataArr.count-1, section: 0)], with: UITableViewRowAnimation.automatic)
+                        self.bankaTablo.insertRows(at: [IndexPath(row: self.dataArr.count-1, section: 0)], with: UITableViewRowAnimation.automatic)
+                    
                 }
                 
                 print("dizideki satır sayısı")
@@ -95,6 +98,19 @@ class UpdateRateViewController: UIViewController,UITableViewDelegate,UITableView
         cell2.ihtiyacOran.text = self.dataArr[indexPath.row][3]
         
         return cell2
+    }
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+    
+        print(dataArr[indexPath.row][0])
+        
+        ref.child("bankalar").child(dataArr[indexPath.row][0]).removeValue { (error, ref) in
+            if error != nil {
+                print(error)
+            }
+        }
+        dataArr.removeAll()
+        tableView.reloadData()
+        
     }
 
     /*

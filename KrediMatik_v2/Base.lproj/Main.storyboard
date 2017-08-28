@@ -650,12 +650,13 @@
                                     <constraint firstAttribute="width" secondItem="jXd-e2-ZZm" secondAttribute="height" multiplier="16:5" id="TaH-Sl-nXg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
-                                <state key="normal" title="Güncelle" backgroundImage="btn_karsilastir.png">
+                                <state key="normal" title="Ekle" backgroundImage="btn_karsilastir.png">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="fBF-GV-bBU" eventType="touchUpInside" id="LZY-SP-06y"/>
                                     <action selector="karsilastir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Wy-UD-jHQ"/>
+                                    <segue destination="7RY-1u-QnX" kind="show" id="si5-xY-00b"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BHl-3L-aNT">
@@ -666,7 +667,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P0U-KU-X7l" id="nv1-g0-hOS">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KrediMatik.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyF-Ct-amC">
@@ -769,6 +770,150 @@
             </objects>
             <point key="canvasLocation" x="1245" y="0.0"/>
         </scene>
+        <!--Banka Ekle View Controller-->
+        <scene sceneID="4ED-d1-wjY">
+            <objects>
+                <viewController id="7RY-1u-QnX" customClass="BankaEkleViewController" customModule="KrediMatik_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Yz-59-Vk0"/>
+                        <viewControllerLayoutGuide type="bottom" id="oPu-x0-IsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T6t-Bn-h7A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_buyuk_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-7F-LGD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="60"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tgl-7F-LGD" secondAttribute="height" multiplier="16:3" id="We8-9M-KaC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Banka Ekle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqA-fW-Yt5">
+                                <rect key="frame" x="66" y="20" width="189" height="60"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Banka Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-hb-EIW">
+                                <rect key="frame" x="60" y="336" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o7I-7H-Jmc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Taşıt kredi oran" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPJ-2b-cPV">
+                                <rect key="frame" x="60" y="374" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AOe-Ll-bMc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ev Kredi Oranı" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpw-Yu-YiL">
+                                <rect key="frame" x="60" y="412" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kml-wj-UoR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İhtiyaç kredi oran" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrL-Nf-iVX">
+                                <rect key="frame" x="60" y="450" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fhm-rR-DdJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="KrediMatik.png" translatesAutoresizingMaskIntoConstraints="NO" id="fR3-QA-t5W">
+                                <rect key="frame" x="60" y="88" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fR3-QA-t5W" secondAttribute="height" multiplier="1:1" id="QWI-AF-zGG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCB-fa-Euc">
+                                <rect key="frame" x="0.0" y="518" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zCB-fa-Euc" secondAttribute="height" multiplier="16:5" id="d0b-Xq-SD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="&lt;&lt;  Geri" backgroundImage="btn_ekle.png">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="karsilastirmaEkle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zL8-76-ebV"/>
+                                    <segue destination="dUm-EC-ri9" kind="show" id="IZB-qo-Dz6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-6d-HOm">
+                                <rect key="frame" x="160" y="518" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fxB-6d-HOm" secondAttribute="height" multiplier="16:5" id="Eqq-1j-jG7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Ekle" backgroundImage="btn_karsilastir.png">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Login:" destination="fBF-GV-bBU" eventType="touchUpInside" id="6s5-5c-ds5"/>
+                                    <action selector="ekleButton:" destination="7RY-1u-QnX" eventType="touchUpInside" id="ndW-sv-fd1"/>
+                                    <action selector="karsilastir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfQ-9x-Kly"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zqA-fW-Yt5" firstAttribute="centerX" secondItem="tgl-7F-LGD" secondAttribute="centerX" id="1F4-ub-Hey"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cPJ-2b-cPV" secondAttribute="trailing" constant="44" id="4Tk-Lv-v3F"/>
+                            <constraint firstItem="tpw-Yu-YiL" firstAttribute="top" secondItem="cPJ-2b-cPV" secondAttribute="bottom" constant="8" id="6fl-gF-FJ5"/>
+                            <constraint firstItem="zCB-fa-Euc" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leading" id="7XC-Ji-tZj"/>
+                            <constraint firstItem="fxB-6d-HOm" firstAttribute="leading" secondItem="zCB-fa-Euc" secondAttribute="trailing" id="7pL-yG-jkV"/>
+                            <constraint firstItem="tpw-Yu-YiL" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leadingMargin" constant="44" id="Dea-5Q-4Pq"/>
+                            <constraint firstItem="PrL-Nf-iVX" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leadingMargin" constant="44" id="GQL-dk-pHJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tgl-7F-LGD" secondAttribute="trailing" id="Gc9-a2-wFQ"/>
+                            <constraint firstItem="oPu-x0-IsR" firstAttribute="top" secondItem="fxB-6d-HOm" secondAttribute="bottom" id="IpS-3I-fVK"/>
+                            <constraint firstItem="tgl-7F-LGD" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leading" id="No7-kX-MCo"/>
+                            <constraint firstItem="cPJ-2b-cPV" firstAttribute="top" secondItem="lKJ-hb-EIW" secondAttribute="bottom" constant="8" id="XNN-2g-UBF"/>
+                            <constraint firstItem="PrL-Nf-iVX" firstAttribute="top" secondItem="tpw-Yu-YiL" secondAttribute="bottom" constant="8" id="YPa-Jc-vgV"/>
+                            <constraint firstItem="tgl-7F-LGD" firstAttribute="top" secondItem="4Yz-59-Vk0" secondAttribute="bottom" id="abB-9E-bWd"/>
+                            <constraint firstItem="fxB-6d-HOm" firstAttribute="leading" secondItem="zCB-fa-Euc" secondAttribute="trailing" id="bQp-Eq-1C3"/>
+                            <constraint firstItem="zCB-fa-Euc" firstAttribute="width" secondItem="fxB-6d-HOm" secondAttribute="width" id="db5-nv-KqS"/>
+                            <constraint firstItem="fR3-QA-t5W" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leadingMargin" constant="44" id="eLB-69-oda"/>
+                            <constraint firstItem="lKJ-hb-EIW" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leadingMargin" constant="44" id="f1v-iK-Pzr"/>
+                            <constraint firstItem="cPJ-2b-cPV" firstAttribute="leading" secondItem="T6t-Bn-h7A" secondAttribute="leadingMargin" constant="44" id="ft1-kr-XdY"/>
+                            <constraint firstItem="fR3-QA-t5W" firstAttribute="top" secondItem="zqA-fW-Yt5" secondAttribute="bottom" constant="8" id="g7g-me-qKr"/>
+                            <constraint firstItem="lKJ-hb-EIW" firstAttribute="top" secondItem="fR3-QA-t5W" secondAttribute="bottom" constant="48" id="gSz-RL-JFY"/>
+                            <constraint firstAttribute="trailing" secondItem="fxB-6d-HOm" secondAttribute="trailing" id="jrP-Zw-4cu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lKJ-hb-EIW" secondAttribute="trailing" constant="44" id="mBY-fh-Q9H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PrL-Nf-iVX" secondAttribute="trailing" constant="44" id="nU9-ci-FbH"/>
+                            <constraint firstItem="zqA-fW-Yt5" firstAttribute="centerY" secondItem="tgl-7F-LGD" secondAttribute="centerY" id="vYd-bQ-HSi"/>
+                            <constraint firstItem="oPu-x0-IsR" firstAttribute="top" secondItem="zCB-fa-Euc" secondAttribute="bottom" id="whb-jq-poa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fR3-QA-t5W" secondAttribute="trailing" constant="44" id="xJH-gB-Y9e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tpw-Yu-YiL" secondAttribute="trailing" constant="44" id="ze2-vE-fkw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bankaAdi" destination="lKJ-hb-EIW" id="8G6-4G-qzY"/>
+                        <outlet property="evOran" destination="tpw-Yu-YiL" id="uA1-Yk-lTp"/>
+                        <outlet property="ihtiyacOran" destination="PrL-Nf-iVX" id="6sA-PZ-hfN"/>
+                        <outlet property="img" destination="fR3-QA-t5W" id="bnR-3R-AWj"/>
+                        <outlet property="tasitOran" destination="cPJ-2b-cPV" id="ZLX-CX-XRm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haG-WJ-i9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970.625" y="1.056338028169014"/>
+        </scene>
         <!--Karsilastir View Controller-->
         <scene sceneID="hkr-ok-ArA">
             <objects>
@@ -789,7 +934,7 @@
                                         <rect key="frame" x="0.0" y="28" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4BI-lp-3gx" id="3VD-30-YLd">
-                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2t-ng-nPs">
@@ -1001,6 +1146,6 @@
         <image name="text_box.png" width="623" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xh8-jh-LN1"/>
+        <segue reference="HhU-f1-T0U"/>
     </inferredMetricsTieBreakers>
 </document>

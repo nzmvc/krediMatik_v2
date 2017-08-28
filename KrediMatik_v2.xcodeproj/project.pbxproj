@@ -13,6 +13,7 @@
 		FA5285CA1F44894500E1A21A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5285C91F44894500E1A21A /* LoginScreenViewController.swift */; };
 		FA5285CC1F448E9300E1A21A /* UpdateRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5285CB1F448E9300E1A21A /* UpdateRateViewController.swift */; };
 		FA5285D01F449B4900E1A21A /* RateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5285CF1F449B4900E1A21A /* RateTableViewCell.swift */; };
+		FA55ED031F535E8500B4F731 /* BankaEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55ED021F535E8500B4F731 /* BankaEkleViewController.swift */; };
 		FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E641F2A07720070E296 /* AppDelegate.swift */; };
 		FA882E671F2A07720070E296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA882E661F2A07720070E296 /* ViewController.swift */; };
 		FA882E6A1F2A07720070E296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA882E681F2A07720070E296 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		FA5285C91F44894500E1A21A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		FA5285CB1F448E9300E1A21A /* UpdateRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateRateViewController.swift; sourceTree = "<group>"; };
 		FA5285CF1F449B4900E1A21A /* RateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTableViewCell.swift; sourceTree = "<group>"; };
+		FA55ED021F535E8500B4F731 /* BankaEkleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankaEkleViewController.swift; sourceTree = "<group>"; };
 		FA882E611F2A07720070E296 /* KrediMatik_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrediMatik_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA882E641F2A07720070E296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA882E661F2A07720070E296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				FABC64381F2A13C0006D1046 /* GoogleService-Info.plist */,
 				FA882E701F2A07720070E296 /* Info.plist */,
 				FAEDBBA41F3DB6DE007685FA /* Images.xcassets */,
+				FA55ED021F535E8500B4F731 /* BankaEkleViewController.swift */,
 			);
 			path = KrediMatik_v2;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				FA882E671F2A07720070E296 /* ViewController.swift in Sources */,
 				FA5285CC1F448E9300E1A21A /* UpdateRateViewController.swift in Sources */,
 				FA5285D01F449B4900E1A21A /* RateTableViewCell.swift in Sources */,
+				FA55ED031F535E8500B4F731 /* BankaEkleViewController.swift in Sources */,
 				FA5285CA1F44894500E1A21A /* LoginScreenViewController.swift in Sources */,
 				FA882E651F2A07720070E296 /* AppDelegate.swift in Sources */,
 			);
